@@ -1,0 +1,41 @@
+{
+  "name": "opennebula-research-portal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node --watch server/index.js\" \"vite --host 0.0.0.0\"",
+    "server": "node server/index.js",
+    "build": "tsc -b && vite build",
+    "preview": "NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "@xterm/addon-fit": "latest",
+    "@xterm/xterm": "latest",
+    "chart.js": "^4.5.1",
+    "concurrently": "latest",
+    "cookie-parser": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "fast-xml-parser": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "latest",
+    "ssh2": "latest",
+    "vite": "latest",
+    "ws": "latest"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "latest",
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/ws": "latest",
+    "typescript": "latest"
+  }
+}
